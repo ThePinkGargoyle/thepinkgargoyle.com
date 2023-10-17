@@ -1,0 +1,143 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>The Pink Gargoyle</title>
+    <link rel="icon" href="../favicon/favicon.ico"/>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+    <meta name="theme-color" content="#fafafa">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;700;900&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+    <header>
+        <div class="half-width">
+            <div id="tpg-logo">
+                <a href="https://thepinkgargoyle.com/"><img src="../img/tpg-logo.png" alt="The Pink Gargoyle Logo"/></a>
+            </div>
+            <h1>The Pink Gargoyle</h1>
+        </div>
+        <div class="half-width">
+            <nav>
+                <ul>
+                    <li><a href="../index.html#services">Services</a></li>
+                    <li><a href="../portfolio/main-portfolio.html">Portfolio</a></li>
+                    <li><a href="../index.html#about">About Me</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!--Portfolio-->
+        <div id="portfolio-#Name of Case Study in Porfolio">
+            <div class="portfolio-background">
+                <div class="design-portfolio">
+                    <div class="case-study-title">
+                        <p><strong>#Case-Study-Title</strong></p>
+                        <div class="case-study-summary">
+                            <!-----------Chose Div Sizes for content----------->
+                            <div class="full-width">
+                                <img src="">
+                                <p></p>
+                            </div>
+                            <div class="half-width">
+                                <img src="">
+                                <p></p>
+                            </div>
+                            <div class="third-width">
+                                <img src="">
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>        
+            </div>
+        </div>
+    </main>
+<!--Fat Footer-->
+    <footer>
+        <!--Contact Section-->
+        <div class="footer-background">
+                <h2 id="contact">Contact</h2>
+                <div class="half-width">
+                    <div class="contact-info">
+                        <div class="phone-icon">
+                            <a href="tel:818-293-4637"  target="_blank"><img src="../img/phone-blk.png" alt="Phone Number (818) 293-4637"></a>
+                        </div>
+                        <div class="phone">
+                            <a href="tel:818-293-4637"  target="_blank"><p>(818) 293-4637</p></a>
+                        </div>
+                        <div class="email-icon">
+                            <a href="mailto:hi@thepinkgargoyle.com"  target="_blank"><img src="../img/envelope-blk.png" alt="email hi@thepinkgargoyle.com"></a>
+                        </div>
+                        <div class="email">
+                            <a href="mailto:hi@thepinkgargoyle.com"  target="_blank"><p>hi@thepinkgargoyle.com</p></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="half-width">
+                    <div class="social-media">
+                        <p>Social Media</p>
+                        <div class="social-media-icon">
+                            <a href="https://www.linkedin.com/in/thepinkgargoyle"  target="_blank"><img src="../img/linkedin-blk.png" alt="The Pink Gargoyle LinkedIn"/></a> 
+                            <a href="https://github.com/ThePinkGargoyle"  target="_blank"><img src="../img/github-blk.png" alt="The Pink Gargoyle GitHub"/></a>
+                            <a href="https://www.instagram.com/thepinkgargoylellc/"  target="_blank"><img src="../img/instagram-blk.png" alt="Adriana Pe&#241;a Personal Instagram"/></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="full-width">
+            <div id="copyright">
+                <a href="https://thepinkgargoyle.com/"><div class="full-width"><p>&#169; The Pink Gargoyle 2021-2023</p></div></a>
+            </div>
+        </div>
+    </footer>
+
+    <!--JS for Top-up button-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="../img/top-up-button.png" alt="Top-up page button"></button>
+        <script>
+            var mybutton = document.getElementById("myBtn");
+            window.onscroll = function() {scrollFunction()};
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {mybutton.style.display = "block";} 
+                else {mybutton.style.display = "none";}
+            }
+            function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+            }
+        </script>
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
