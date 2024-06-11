@@ -10,14 +10,27 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-fushia: #ff0099;
+  --color-white: #ffffff;
+  --color-black: #000000;
+}
 
 /*a href attribute styles*/
-a:link, a:visited, a:hover, a:active { 
+a:link { 
   text-decoration: none;  
 }
 
+a:hover {
+  color:var(--color-fushia);
+}
+
 a, .phone {
-  color: #000000;
+  color: var(--color-black);
 }
 
 @font-face {
@@ -25,15 +38,21 @@ a, .phone {
   src: url("../fonts/golden-ranger.ttf");
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
-  background-color: #000000;
+  background-color: var(--color-black);
   max-width: 1300px;
-  margin: 0 auto;
+  margin: 1.3rem auto 0;
+  border: solid 1px var(--color-fushia);
+  box-shadow: var(--color-fushia) 0px 5px 15px;
 }
 
 h1 {
   font-family: 'Golden Ranger', script;
-  color: #ffffff;
+  color: var(--color-white);
   font-size: 3.5rem;
   text-align: center;
   width: 38rem;
@@ -41,13 +60,13 @@ h1 {
 
 h2 {
   font-family: 'Nunito', sans-serif;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 700;
 }
 
 p {
   font-family: 'Nunito', sans-serif;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 700;
 }
 
@@ -55,6 +74,10 @@ img {
   max-width: 100%;
 }
 
+/*Scrollbar styling*/
+  ::-webkit-scrollbar {
+    display: none;
+}
 
 /* GRID */
 
@@ -74,24 +97,21 @@ img {
   float: left;
 }
 
+.two-thirds-width {
+  width: 67.2%;
+  float: left;
+}
+
 .wrapper {
   width: fit-content;
 }
 
 /*Header*/
 
-#tpg-logo {
-  float: left;
-  padding-top: 1rem;
-  padding-left: 1rem;
-}
-
 nav {
+  position: absolute;
+  top: 1.3rem;
   font-family: 'Nunito', sans-serif;
-  font-size: 1rem;
-  font-weight: 700;
-  margin-top: 6rem;
-  text-align: right;
 }
 
 nav ul li {
@@ -101,8 +121,9 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #ff0099;
-  padding-left: 1rem;
+  color: var(--color-white);
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 
 li {
@@ -110,86 +131,98 @@ li {
   font-size: 1rem;
 }
 
-/*Services*/
-#services {
-  color: #ffffff;
-  background-color: #ff0099;
-  text-align: center;
-  padding: 1rem 0;
-  margin-top: -.28rem;
-  margin-bottom: 0;
+.dev-description {
+  border: 1px solid var(--color-black);
+  line-height: 1.5rem;
+  padding-left: 6rem;
+  color: var(--color-white);
 }
 
-.services-icon {
-  text-align: center;
-  margin: 5.8% 0;
+.dev-description h2 {
+  margin-bottom: 4rem;
+  padding-top: 4rem;
+  color: var(--color-white);
 }
+
+.dev-description, .dev-icon  {
+  height: 38rem;
+}
+
+.dev-icon {
+  padding-top: 13rem;
+}
+
+.dev-description, .dev-icon, .website-description, .website-icon {
+  background-color: var(--color-black);
+} 
+
+.website-description {
+  height: 16rem;
+  color: var(--color-white);
+  line-height: 1.5rem;
+  padding-left: 6rem; 
+}
+
+
+.website-description h2{
+  color: var(--color-white);
+  padding-top: 4rem;
+  margin-bottom: 4rem;
+}
+
 
 .website-description p {
-  color: #ffffff;
+  color: var(--color-white);
 }
 
-.website-icon, .dev-description  {
-  height: 16rem;
-  background-color: #ffffff;
-  padding-top: .7rem;
-  padding-left: 1rem;
-  align-items: center;
-  line-height: 1.5rem;
-  margin-top:-.27rem;
+.website-description, .website-icon {
+  height: 36rem;
 }
 
-.dev-icon, .website-description {
-  height: 16rem;
-  color: #ffffff;
-  background-color: #000000;
-  padding-top: .7rem;
-  padding-left: 1rem;
-  align-items: center;
-  margin-top:-.27rem;
+.website-icon {
+  padding-top: 11rem;
 }
 
-strong {
-  padding-left: 10rem;  
-}
 
 /*About Me*/
 
-.background-about {
-  width: 200%;
-  margin-left: -100%;
-  margin-top: -3%;
-  margin-bottom: -48rem;
-  float: left;
-}
-
 #about {
-  color: #ff0099;
+  clear: left;
+  color: var(--color-black);
+  background-color: var(--color-white);
   text-align: center;
-  width: 198.8%;
+  padding-top: 4rem;  
   padding-bottom: 1rem;
-  margin-left: -100%;
+  margin-bottom: 0;
+  
 }
 
 .headshot {
-  width: 100%;
-  margin-left: -100%;
-  float: left;
-  padding-left: 2rem;
+  max-width: 40.55rem;
+  display: flex;
+  align-items: center;
+  justify-content:center
+} 
+
+.headshot img {
+  max-width: 26rem;
+  height: auto;
+  border-radius: 3rem;
+}
+  
+.headshot, .about-summary {
+  background-color: var(--color-white);
+  height: 42rem;
+  margin-top: 0;
 }
 
 .about-summary {
-  width: 70%;
+  clear: left;
   text-align: left;
   font-weight: 700;
   line-height: 1.5rem;
-  color: #000000;
-  background-color: #ffffff;
-  padding: 15.5% 13%;
-  margin-left: 0;
-  margin-right: 2rem;
-  margin-bottom: 11%;
-  border-radius: 50%;
+  color: var(--color-black);
+  padding: 4rem 3rem 4rem 6rem;
 }
 
 /*Footer*/
@@ -199,70 +232,70 @@ footer {
 }
 
 .footer-background {
-  color: #000000;
+  clear: left;
   min-height: 18rem;
-  background-color: #ff0099;
-  padding-left: 3rem;
+  background-color: var(--color-fushia);
 }
 
 #contact {
-  color: #ffffff;
+  color: var(--color-white);
   text-align: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
   margin-top: 0;
-}
-
-.social-media-icon {
-  letter-spacing: 1rem;
-}
-
-.social-media-icon img {
-  width: 60px;
+  clear: left;
 }
 
 .contact-info {
-  padding-top: .5rem;
-  margin-left: 10rem;
+  align-items: center;
+}
+
+.contact-info p {
+  width: 3%;
+  text-align: center;
+  color: var(--color-white);
+  float: left;
+}
+
+.phone p {
+  width: 100%;
+}
+
+.email p{
+  width: 100%;
+}
+
+.phone-email {
+  display: flex;
+  justify-content: center;
 }
 
 .social-media {
+  clear: left;
   width: 100%;
   text-align: center;
-  padding-top: .5rem;
-  padding-bottom: 5rem;
+  color: var(--color-white);
+  padding-top: 4rem;
 }
 
-.phone-icon {
-  width: 40px;
-  float:left;
-  margin-top: .4rem;
-  padding-right: 3rem;
+.social-media-icon i {
+  font-size: 5rem;
+  letter-spacing: 3rem;
+  color: var(--color-white);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
-.phone {
-  align-items: center;
-  margin-bottom: 3rem;
+#copyright {
+  clear: left;
+  background-color: var(--color-fushia);
+  margin: 0;
+  border: 1px solid var(--color-fushia);
 }
-
-.email-icon {
-  width: 40px;
-  float: left;
-  padding-right: 3rem;
-  margin-top: 1rem;
-}
-
-.email {
-  align-items: center;
-  margin-top: 4.3rem;
-}
-
 
 #copyright a {
-  color: #ff0099;
+  color: var(--color-white);
   text-align: center;
-  padding: .1rem 0;
-  margin-top: 0;
 }
 
 /*Top-Up Button*/
@@ -271,57 +304,57 @@ footer {
   position:fixed;
   bottom: .5rem;
   z-index: 99;
-  border: .063rem solid #000000;
+  border: .063rem solid var(--color-black);
   outline: none;
   cursor: pointer;
   padding: 0rem;
   border-radius: .5rem;
 }
 
-/*************Main-Portfolio-Page*************/
+/*************Main-projects-Page*************/
 /*Base Styles*/
 
-.portfolio-background {
+.projects-background {
   clear: left;
-  background-color: #ffffff;
+  background-color: var(--color-white);
   padding: 3%;
   height: 56rem;
  }
 
-.portfolio-background p {
+.projects-background p {
   font-size: 1rem;
 }
 
-.portfolio-background p strong {
-  color: #ff0099;
+.projects-background p strong {
+  color: var(--color-fushia);
   font-size: 1.5rem;
   text-align: left;
   padding-left: 1%;
 }
 
-.portfolio-background h2 {
-  color: #ffffff;
+.projects-background h2 {
+  color: var(--color-white);
   text-align: center;
-  background-color: #000000;
+  background-color: var(--color-black);
 }
 
 
 /*Grid*/
-.portfolio-background .half-width {
+.projects-background .half-width {
   text-align: center;
 }
 
-/*Portfolio-Section*/
-.design-portfolio {
+/*projects-Section*/
+.design-projects {
   margin-top: 3%;
 }
 
-.development-portfolio {
+.development-projects {
   margin-top: 33%;
   clear: left;
 }
 
-/*************Portfolio-Case-Study*************/
+/*************projects-Case-Study*************/
 .case-study-title p strong {
   font-size: 1.8rem;
 }
@@ -335,44 +368,44 @@ footer {
   margin-top: 1%;
 }
 
-/*************Portfolio-Single-Webpage-Design*************/
-#portfolio-single-webpage-design .portfolio-background {
+/*************projects-Single-Webpage-Design*************/
+#projects-single-webpage-design .projects-background {
   height: 60rem;
 }
 
-/*************Portfolio-Responsive-Web-Design*************/
-#portfolio-responsive-web-design .portfolio-background {
+/*************projects-Responsive-Web-Design*************/
+#projects-responsive-web-design .projects-background {
   height: 95rem;
 }
 
-#portfolio-responsive-web-design .yolanda-lopez {
+#projects-responsive-web-design .yolanda-lopez {
   margin-bottom: 8%;
 }
 
-#portfolio-responsive-web-design .mobile-first-design {
+#projects-responsive-web-design .mobile-first-design {
   margin-left:  8.4%;
 }
 
 
-/*************Portfolio-Product-Design*************/
-#portfolio-product-design .portfolio-background {
+/*************projects-Product-Design*************/
+#projects-product-design .projects-background {
   height: 78rem;
 }
 
-#portfolio-product-design .social-media-header {
+#projects-product-design .social-media-header {
   width: fit-content;
   margin: 0 auto;
 }
 
 
 
-#portfolio-product-design .portfolio-background .cafe-abuela-icons {
+#projects-product-design .projects-background .cafe-abuela-icons {
   width: 10rem;
   padding-top: 3.5%;
   margin: 0 auto; 
 }
 
-#portfolio-product-design .portfolio-background .cafe-abuela-logo {
+#projects-product-design .projects-background .cafe-abuela-logo {
   padding-left: 4.5%;
 }
 
@@ -382,156 +415,108 @@ footer {
 /*Tablet-Base Styles*/
 
 body {
-  max-width: 900px;
+  max-width: 899.99px;
   margin: 0 auto;
 }
 
-h1 {
-  font-size: 3rem;
+h2 {
+  font-size: 1.8rem;
   letter-spacing: .2rem;
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 /*Tablet-Header*/
-#tpg-logo {
-  margin-left: -1%;
-}
-
 nav {
-  width: 150%;
-  margin-top: 23%;
-  margin-left: -51%;
-}
-
-nav ul li {
-  text-decoration: underline;
+  position: absolute;
+  top: .3rem;
 }
 
 nav ul li a {
-  font-size: 1.3rem;
-  font-weight: 700px;
+  font-size: 1.1rem;
 }
 
-/*Tablet-Services*/
-#services {
-  margin-bottom: .2rem;;
+/*Tablet-skills*/
+
+.dev-icon, .dev-description, .website-icon, .website-description {
+  clear: left;
 }
 
-.services-icon {
-  width: 60%;
-  margin: 85% 15%;
+.dev-icon, .website-icon {
+  padding-left: 4rem;
+  width: 14rem;
 }
 
-.website-icon, .dev-icon {
-  width: 40%;
-  height: 27rem;
-}
-
-.website-description, .dev-description {
-  width: 147.5%;
-  height: 27rem;
-  padding-right: 5%;
-  margin-left: -56%;
-}
-
-.website-description li, .dev-description li {
-  font-size: 1.3rem;
-  padding-bottom: 1rem;
-}
-
-.background-about {
-  display: none;
+.dev-description, .website-description {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 #about {
   clear: left;
-  width: 193%;
   font-weight: 900;
-  padding: 2rem 1rem;
-  background-color: #ffffff;
-  margin-top: -1%;
-  margin-left:-100%;
-  margin-bottom: 3%;
-}
+} 
 
-.headshot {
-  width: 180%;
-  background-color: #ffffff;
-  padding-left: 20%;
-  padding-bottom: 3%;
-  margin-top: -3%;
-  margin-left: -100%;
-  margin-bottom: 8%;
+.headshot img{
+  max-width: 23rem;
 }
 
 .about-summary {
-  width: 174%;
-  line-height: 2rem;
-  height:auto;
-  padding-top: 1.5%;
-  margin-left: -100%;
-  margin-top: -.5%;
-  margin-bottom: -1%;
-  border-radius: 0;
+  padding-left: 3rem;
+  padding-top: 3rem;
 }
 
 /*Tablet-Footer*/
 
-.footer-background {
-  width: 100.05%;
-  padding-top: 1%;
-  padding-left: 0; 
-  padding-bottom: 3%; 
-}
-
 #contact {
-  padding: 1rem 0;
-}
-
-.contact-info {
-  margin-left: 10%;
+  clear: left;
+  padding-bottom: 0;
+  margin-bottom: .7rem;
 }
 
 .social-media {
-  margin-left: 5%;
+  padding-top: 1rem;
+  padding-top: .7rem;
 }
 
-#copyright {
-  width: 101.5%;
+.social-media-icon i {
+  font-size: 3rem;
+   padding-top: 0;
+  padding-bottom: 3rem;
 }
 
-/*************Tablet-Main-Portfolio-Page*************/
+
+/*************Tablet-Main-projects-Page*************/
 
 /*Base Styles*/
 
-.portfolio-background {
+.projects-background {
   height: 48rem;
  }
 
-/*************Tablet-Portfolio-Single-Webpage-Design*************/
-#portfolio-single-webpage-design .portfolio-background {
+/*************Tablet-projects-Single-Webpage-Design*************/
+#projects-single-webpage-design .projects-background {
   height: 55rem;
 }
 
-/*************Tablet-Portfolio-Responsive-Web-Design*************/
-#portfolio-responsive-web-design .portfolio-background {
+/*************Tablet-projects-Responsive-Web-Design*************/
+#projects-responsive-web-design .projects-background {
   height: 70rem;
 }
 
-#portfolio-responsive-web-design .yolanda-lopez {
+#projects-responsive-web-design .yolanda-lopez {
   width: 50%;  
   margin: 0 auto 3% auto;
 }
 
-#portfolio-responsive-web-design .mobile-first-design {
+#projects-responsive-web-design .mobile-first-design {
   margin-left: 0;
 }
 
-/*************Tablet-Portfolio-Product-Design*************/
-#portfolio-product-design .portfolio-background {
+/*************Tablet-projects-Product-Design*************/
+#projects-product-design .projects-background {
   height: 70rem;
 }
 
@@ -542,174 +527,173 @@ nav ul li a {
 
 /*Smartphone-Base Styles*/
 body {
-  max-width: 400px;
+  max-width: 399.99px;
   margin: 0 auto;
-} 
-
-h1 {
-  width: 198%;
-  font-size: 2.5rem;
-  text-align: center;
-  margin-top: 15%;
-  clear: left;
+  box-shadow: none;  
+  
 }
 
-strong {
-  padding-left: 0;
-  font-size: 1.44rem;
+main {
+  position: fixed;
+  overflow: scroll;
+  top: 55px;
+  padding-bottom: 55px;
+  width: 399.99px;
+  height: fit-content;
+  height: 100vh;
 }
 
+h2 {
+  font-size: 1rem;
+}
+
+p, li {
+  font-size: .8rem;
+}
 
 /*SmartPhone-Header*/
-
-#tpg-logo {
-  width: 192%;
-  text-align: center;
-  margin-bottom: 8%;
-}
-
 nav {
-  width: 200%;
-  text-align: center;
-  margin-top: 100%;
-  margin-left: -100%;
-  margin-bottom: 11%;
+  position: fixed;
+  top: 0rem;
+  width: 25rem;
+  background-color: var(--color-black);
 }
 
 nav ul {
-  margin: -2%;
-  padding-left: 0;
-  line-height: 3rem;
+  padding: 0;
+  text-align: center;
 }
 
 nav ul li a {
-  margin-left: -5%;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
-/*SmartPhone-Services*/
-.services-icon {
-  margin: 19% 9%;
-}
 
- .website-icon {
-  background-color: #000000;
- }
+/*SmartPhone-skills*/
 
-.website-icon, .website-description {
-  height: 47rem;
-}
-
-.website-description, .dev-description {
-  width: 139%;
-  margin-left: -52%;
-}
-
-.website-description p, .dev-description p {
-  font-size: 1.3rem;
-}
-
-.website-description li, .dev-description li {
-  font-size: 1.2rem;
+#skills {
+  clear: left;
 }
 
 .dev-icon {
-  background-color: #ffffff;
+  display: none;
 }
 
-.dev-icon, .dev-description {
-  height: 32rem;
+.website-icon {
+  display: none;
 }
 
-.dev-description {
-  margin-top: -2%;
+.dev-description, .website-description {
+  border: 1px solid var(--color-fushia);
+  width: 25rem;
+  height: fit-content;
 }
+
+.dev-description h2, .website-description h2 {
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.dev-description ul, .website-description ul {
+  list-style-position: none;
+  padding-left: .9rem;
+  padding-right: .9 rem;
+}
+
+
 
 /*SmartPhone-About Me*/
 
 #about {
-  width: 184%;
-  margin-top: 0;
-  margin-left: -100%;
-  background-color: #000000;
+  margin: 0;
+  padding-top: 2rem;
+  padding-left: 1rem;
+  width: 25rem;
+  text-align: left;
 }
 
-.headshot {
-  width: 188%;
-  padding:0 6.1% 3% 6.1%;
-  margin-left: -100%;
-  margin-bottom: 0;
-  background-color: #000000;
+.about-me-container {
+  display: flex;
+  flex-wrap: wrap-reverse;
 }
 
 .about-summary {
-  width: 174.2%;
-  clear: left;
-  margin-left: -100%;
-  color: #ffffff;
-  background-color: #000000;
+  width: 25rem;
+  height: fit-content;
+}
+
+.headshot {
+  padding-top: 3rem;
+  width: 25rem;
+  height: fit-content;
+}
+
+.headshot img {
+  width: 10rem;
 }
 
 .about-summary p {
-  font-size: 1.3rem;
+  
 }
 
 /*SmartPhone-Footer*/
 
-.footer-background {
-  height:30rem;
+#contact {
+  padding-top: 3rem;
 }
 
-.contact-info {
-  width: 198.3%;
-  padding-left: 2.5%;
-  margin-left: 0;
-  border-top: #000000 solid;
-  border-bottom: #000000 solid;
+.social-media h2{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-.social-media {
-  clear: left;
-  width: 197%;
-  margin-left: -100%;
-  margin-top: 105%;
+.social-media-icon i {
+  font-size: 2rem;
+  width: 3rem;
   padding-bottom: 0;
 }
 
-/*SmartPhone-Top-Up Button*/
-#myBtn {
-  left: 5%;
+#copyright {
+  margin-top: 0;
 }
 
-/*************SmartPhone-Main-Portfolio-Page*************/
+
+
+/*SmartPhone-Top-Up Button*/
+/*#myBtn {
+  
+  left: 1%;
+}*/
+
+/*************SmartPhone-Main-projects-Page*************/
 
 /*Base Styles*/
 
-.portfolio-background {
+.projects-background {
   height: 111rem;
  }
 
 /*Grid*/
-.portfolio-background .third-width {
+.projects-background .third-width {
   width: 100%;
 }
 
-.portfolio-background .half-width {
+.projects-background .half-width {
   width: 100%;
 }
 
-/*************SmartPhnoe-Portfolio-Single-Webpage-Design*************/
-#portfolio-single-webpage-design .portfolio-background {
+/*************SmartPhnoe-projects-Single-Webpage-Design*************/
+#projects-single-webpage-design .projects-background {
   height: 105rem;
 }
 
-/*************SmartPhone-Portfolio-Responsive-Web-Design*************/
-#portfolio-responsive-web-design .portfolio-background {
+/*************SmartPhone-projects-Responsive-Web-Design*************/
+#projects-responsive-web-design .projects-background {
   height: 68rem;
 }
 
-/*************SmartPhone-Portfolio-Product-Design*************/
-#portfolio-product-design .portfolio-background {
+/*************SmartPhone-projects-Product-Design*************/
+#projects-product-design .projects-background {
   height: 91rem;
 }
 
@@ -758,8 +742,8 @@ nav ul li a {
   width: 100%;
   height: 7.5rem;
   overflow: hidden;
-  border-top: #ffffff 1rem solid;
-  border-bottom: #ffffff 1rem solid;
+  border-top: var(--color-white) 1rem solid;
+  border-bottom: var(--color-white) 1rem solid;
   margin-bottom: 0;
 }
 
@@ -771,17 +755,17 @@ nav ul li a {
   transform: translateY(-3%);
 }
 
-/*Mobile-Services*/
+/*Mobile-skills*/
 
 .website-icon, .dev-icon {
   display: none;
 }
 
 strong {
-  color: #ff0099;
+  color: var(--color-fushia);
 }
 
-#services {
+#skills {
   width: 100.3%;
 }
 
@@ -792,8 +776,8 @@ strong {
 
 .website-description {
   height: 55rem;
-  color: #000000;
-  background-color: #ffffff;
+  color: var(--color-black);
+  background-color: var(--color-white);
 }
 
 .dev-description {
@@ -818,7 +802,7 @@ strong {
   width: 178%;
   margin-top: -50%;
   margin-left: -100%;
-  background-color: #000000;
+  background-color: var(--color-black);
 }
 
 .background-about {
@@ -829,14 +813,14 @@ strong {
   width: 159.5%;
   margin-left: -85.5%;
   margin-top: -3%;
-  background-color: #000000;
+  background-color: var(--color-black);
 }
 
 .about-summary {
   width: 145.5%;
   margin-left: -85.5%;
-  color: #ffffff;
-  background-color: #000000;
+  color: var(--color-white);
+  background-color: var(--color-black);
   clear: left;
 }
 
@@ -856,8 +840,8 @@ strong {
 .contact-info {
   width: 200%;
   margin-left: -2%;
-  border-top: #000000 solid;
-  border-bottom: #000000 solid;
+  border-top: var(--color-black) solid;
+  border-bottom: var(--color-black) solid;
 }
 
 .phone-icon, .email-icon {
@@ -896,21 +880,21 @@ strong {
   left: 3%;
 }
 
-/*************Mobile-Main-Portfolio-Page*************/
+/*************Mobile-Main-projects-Page*************/
 
 /*Base Styles*/
 
-.portfolio-background {
+.projects-background {
   height: 92rem;
  }
 
-/*************Mobile-Portfolio-Single-Webpage-Design*************/
-#portfolio-single-webpage-design .portfolio-background {
+/*************Mobile-projects-Single-Webpage-Design*************/
+#projects-single-webpage-design .projects-background {
   height: 100rem;
 }
 
-/*************Tablet-Portfolio-Product-Design*************/
-#portfolio-product-design .portfolio-background {
+/*************Tablet-projects-Product-Design*************/
+#projects-product-design .projects-background {
   height: 93rem;
 }
 
