@@ -228,10 +228,6 @@ li {
 
 /*Footer*/
 
-footer {
-  clear: left;
-}
-
 .footer-background {
   clear: left;
   min-height: 18rem;
@@ -312,15 +308,16 @@ footer {
   border-radius: .5rem;
 }
 
-/*************Main-projects-Page*************/
+/*************Main-projects and Case-Study Base Styles*************/
 /*Base Styles*/
 
 .projects-background {
   clear: left;
   background-color: var(--color-white);
-  padding: 3%;
-  height: 56rem;
- }
+  padding: 3rem;
+  height:64rem;
+  border: var(--debuging-border);
+}
 
 .projects-background p {
   font-size: 1rem;
@@ -339,25 +336,59 @@ footer {
   background-color: var(--color-black);
 }
 
+#hero-projects-case-study {
+  height: 21.2rem;
+ }
+
 
 /*Grid*/
 .projects-background .half-width {
   text-align: center;
 }
 
-/*projects-Section*/
+/*projects-Section and case-study*/
 .design-projects {
-  margin-top: 3%;
+  margin-top: .03rem;
 }
 
 .development-projects {
-  margin-top: 33%;
+  margin-top: .33rem;
   clear: left;
 }
+
+.projects-case-study #contact{
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.projects-case-study .social-media {
+ padding-top: 3rem;
+}
+
+
+
+.projects-case-study .social-media-icon {
+  padding: 3rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.projects-case-study .social-media-icon i {
+  padding-top: 0;
+  padding-bottom: 0;
+  letter-spacing: 3rem;
+}
+
+
 
 /*************projects-Case-Study*************/
 .case-study-title p strong {
   font-size: 1.8rem;
+}
+
+.case-study-summary {
+  
+  background-color: var(--color-white);
 }
 
 .case-study-summary p {
@@ -370,44 +401,37 @@ footer {
 }
 
 /*************projects-Single-Webpage-Design*************/
-#projects-single-webpage-design .projects-background {
-  height: 60rem;
+#projects-single-webpage-design .dorothy-long {
+ width: 24rem;
+ padding-top: 2.3rem;
+ padding-left: 1.3rem;
+ margin: 0 auto;
 }
 
 /*************projects-Responsive-Web-Design*************/
+#projects-responsive-web-design p {
+  font-size: 1.3rem;
+}
+
 #projects-responsive-web-design .projects-background {
   height: 95rem;
 }
 
 #projects-responsive-web-design .yolanda-lopez {
-  margin-bottom: 8%;
+  margin-bottom: 2.4rem;
+  margin-top: 3rem;
 }
 
 #projects-responsive-web-design .mobile-first-design {
-  margin-left:  8.4%;
+  padding: 3rem;
+  width: 60rem;
+  margin: 0 auto;
 }
 
 
 /*************projects-Product-Design*************/
 #projects-product-design .projects-background {
-  height: 78rem;
-}
-
-#projects-product-design .social-media-header {
-  width: fit-content;
-  margin: 0 auto;
-}
-
-
-
-#projects-product-design .projects-background .cafe-abuela-icons {
-  width: 10rem;
-  padding-top: 3.5%;
-  margin: 0 auto; 
-}
-
-#projects-product-design .projects-background .cafe-abuela-logo {
-  padding-left: 4.5%;
+  height: 84rem;
 }
 
 /**********************Tablet View**********************/
@@ -494,17 +518,17 @@ nav ul li a {
 /*Base Styles*/
 
 .projects-background {
-  height: 48rem;
+  height: 58rem;
+  
  }
 
-/*************Tablet-projects-Single-Webpage-Design*************/
-#projects-single-webpage-design .projects-background {
-  height: 55rem;
-}
+ #hero-projects-case-study {
+  height: 14.7rem;
+ }
 
 /*************Tablet-projects-Responsive-Web-Design*************/
 #projects-responsive-web-design .projects-background {
-  height: 70rem;
+  height: 85rem;
 }
 
 #projects-responsive-web-design .yolanda-lopez {
@@ -513,15 +537,15 @@ nav ul li a {
 }
 
 #projects-responsive-web-design .mobile-first-design {
-  margin-left: 0;
+  width: 50rem;
 }
 
 /*************Tablet-projects-Product-Design*************/
 #projects-product-design .projects-background {
-  height: 70rem;
+  height: 76rem;
 }
 
-}
+
 
 /**********************SmartPhone View**********************/
 @media (max-width:885px) {
@@ -600,8 +624,6 @@ nav ul li a {
   padding-right: .9 rem;
 }
 
-
-
 /*SmartPhone-About Me*/
 
 #about {
@@ -665,6 +687,11 @@ nav ul li a {
 
 .projects-background {
   height: 111rem;
+  clear: left;
+ }
+
+ #hero-projects-case-study {
+  height: 6.5rem;
  }
 
 /*Grid*/
@@ -676,14 +703,25 @@ nav ul li a {
   width: 100%;
 }
 
-/*************SmartPhnoe-projects-Single-Webpage-Design*************/
+
+
+.projects-case-study .social-media-icon {
+  padding: 1rem 0 2rem;
+}
+
+/*************SmartPhone-projects-Single-Webpage-Design*************/
 #projects-single-webpage-design .projects-background {
   height: 105rem;
 }
 
 /*************SmartPhone-projects-Responsive-Web-Design*************/
 #projects-responsive-web-design .projects-background {
-  height: 68rem;
+  height: 96rem;
+}
+
+#projects-responsive-web-design .mobile-first-design {
+  width: 20rem;
+  padding: 0;
 }
 
 /*************SmartPhone-projects-Product-Design*************/
@@ -776,24 +814,45 @@ h2#about {
   left: 3%;
 }*
 
-/*************Mobile-Main-projects-Page*************/
+/*************Mobile-Main-projects-Page and case-study *************/
 
 /*Base Styles*/
 
 .projects-background {
-  height: 92rem;
+  height: 111rem;
  }
 
-/*************Mobile-projects-Single-Webpage-Design*************/
-#projects-single-webpage-design .projects-background {
-  height: 100rem;
-}
+ .projects-background .case-study-title strong {
+  font-size: 1.3rem;
+ }
 
-/*************Tablet-projects-Product-Design*************/
+ .projects-case-study .social-media {
+  padding-top: 1rem;
+ }
+
+ .projects-case-study .social-media-icon {
+  padding: 0 0 2rem;
+ }
+
+ #hero-projects-case-study {
+  height: 4.6rem;
+ }
+
+
+/*************Mobile-projects-Product-Design*************/
 #projects-product-design .projects-background {
   height: 93rem;
+  padding: .3rem;
 }
 
+/*Responsive-Mobile-First-Design*/
+#projects-responsive-web-design .projects-background {
+  height: 116rem;
+}
+
+#projects-responsive-web-design .mobile-first-design {
+  padding: 0;
+  width: 11rem;
 }
 
 
