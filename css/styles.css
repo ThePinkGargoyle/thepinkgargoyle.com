@@ -18,6 +18,7 @@
   --color-fushia: #ff0099;
   --color-white: #ffffff;
   --color-black: #000000;
+  --debuging-border: 1px solid yellowgreen;
 }
 
 /*a href attribute styles*/
@@ -530,7 +531,6 @@ body {
   max-width: 399.99px;
   margin: 0 auto;
   box-shadow: none;  
-  
 }
 
 main {
@@ -608,8 +608,9 @@ nav ul li a {
   margin: 0;
   padding-top: 2rem;
   padding-left: 1rem;
+  
   width: 25rem;
-  text-align: left;
+  text-align: center;
 }
 
 .about-me-container {
@@ -620,20 +621,13 @@ nav ul li a {
 .about-summary {
   width: 25rem;
   height: fit-content;
+  
 }
 
 .headshot {
   padding-top: 3rem;
   width: 25rem;
   height: fit-content;
-}
-
-.headshot img {
-  width: 10rem;
-}
-
-.about-summary p {
-  
 }
 
 /*SmartPhone-Footer*/
@@ -706,179 +700,81 @@ nav ul li a {
 body {
   max-width: 280px;
   margin: 0 auto;
+  box-shadow: none;
 }
-
-h1 {
-  font-size: 3rem;
-}
-
 
 /*Mobile-Header*/
-#tpg-logo {
-  width: 188%;
-  text-align: center;
-  margin-bottom: 23%;
+
+main {
+  width: 17.5rem;
 }
 
-nav {
-  text-align: left;
-  margin-top: 198%;
-  margin-bottom: 20%;
-  clear: left;
+nav, .dev-description, .website-description, #about, .headshot, .about-summary, #footer, #contact, .phone-email, #copyright {
+  width: 17.5rem;
 }
 
-nav ul li {
-  padding-right: 3rem;
-  line-height: 1.8rem;
-  text-decoration: none;
-}
-
-nav ul li a {
-  font-size: 2.1rem;
-}
-
-.hero {
-  display: inline-block;
-  width: 100%;
-  height: 7.5rem;
-  overflow: hidden;
-  border-top: var(--color-white) 1rem solid;
-  border-bottom: var(--color-white) 1rem solid;
-  margin-bottom: 0;
-}
-
-.hero-img {
-  position: relative;
-  width: 120%;
-  margin-bottom: 0;
-  transform: translateX(0);
-  transform: translateY(-3%);
-}
-
-/*Mobile-skills*/
-
-.website-icon, .dev-icon {
-  display: none;
-}
-
-strong {
-  color: var(--color-fushia);
-}
-
-#skills {
-  width: 100.3%;
-}
-
-.website-description, .dev-description {
-  width: 184%;
-  margin-left: 0;
-}
-
-.website-description {
-  height: 55rem;
-  color: var(--color-black);
-  background-color: var(--color-white);
-}
-
-.dev-description {
-  height: 38rem;
-  margin-left: -8.75rem;
-  margin-top: 55rem;
-}
-
-.website-description p strong, .dev-description p strong {
-  line-height: 3rem;
-  font-size: 2rem;
-  margin-left: -3%;
-}
-
-.website-description p strong {
-  font-size: 3rem;
+nav ul {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:justify;
+  line-height: 1.5rem;
 }
 
 /*Mobile-About Me*/
 
-#about {
-  width: 178%;
-  margin-top: -50%;
-  margin-left: -100%;
-  background-color: var(--color-black);
+#about, .about-summary {
+  clear: left;
+  margin: 0;
 }
 
-.background-about {
-  display: none;
+h2#about {
+  clear: left;
+  text-align: center;
+  padding: 3rem;
 }
 
 .headshot {
-  width: 159.5%;
-  margin-left: -85.5%;
-  margin-top: -3%;
-  background-color: var(--color-black);
-}
-
-.about-summary {
-  width: 145.5%;
-  margin-left: -85.5%;
-  color: var(--color-white);
-  background-color: var(--color-black);
-  clear: left;
-}
-
-.about-summary p {
-  font-size: 1.3rem;
-  margin-bottom: -1rem;
+  padding: 0;
 }
 
 /*Mobile-Footer*/
 
-.footer-background {
-  width: 100.5%;
-  height: 34rem;
-  margin: 0 auto;
+#contact {
+  padding: 3rem 0 1rem;
 }
 
-.contact-info {
-  width: 200%;
-  margin-left: -2%;
-  border-top: var(--color-black) solid;
-  border-bottom: var(--color-black) solid;
+.phone-email {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
 }
 
-.phone-icon, .email-icon {
-  margin-left: 38%;
-  margin-right: 20%;
-  margin-bottom: 11%;
+.vertical-bar {
+  display: none;
 }
 
-.phone p, .email p {
-  text-align: center;
-  font-size: 1.2rem;
+.social-media h2 {
+  padding-bottom: 2rem;
 }
 
-.social-media {
-  width: 200%;
-  margin-top: 220%;
-  margin-left: -103%;
+.social-media-icon {
+  padding-bottom: 2rem;
 }
 
-.social-media-icon img {
-  width: 23%;
+.social-media-icon i {
+  width: 2.6rem;
 }
 
 #copyright {
-  width: 87%;
-  margin: 0 auto;
-}
-
-#copyright p {
-  font-size: 1rem;
+  padding-bottom: .1rem;
 }
 
 /*Mobile-Top-Up Button*/
-#myBtn {
+/*#myBtn {
   width: 3rem;
   left: 3%;
-}
+}*
 
 /*************Mobile-Main-projects-Page*************/
 
