@@ -27,12 +27,10 @@ a:link {
 }
 
 a:hover {
-  color:var(--color-fushia);
+  color: (--color-fushia);
 }
 
-a, .phone {
-  color: var(--color-black);
-}
+
 
 @font-face {
   font-family: "Golden Ranger";
@@ -308,15 +306,112 @@ li {
   border-radius: .5rem;
 }
 
-/*************Main-projects and Case-Study Base Styles*************/
+
+/*******Projects Styles*******/
+
 /*Base Styles*/
+.header-projects {
+  position: relative;
+}
+
+.main-projects-wrapper {
+  height: 100vh;
+  overflow: scroll;
+  margin-top: -.24rem;
+}
+
+#projects h2 {
+  color:var(--color-fushia);
+  font-size: 2.8rem;
+  margin-bottom: 3rem;
+}
+
+#projects .blank-div {
+  height:68px;
+}
+
+.projects-container h3 {
+  color: var(--color-white);
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-top: 0;
+  border: 3px solid var(--color-fushia);
+}
+
+#design img {
+width: 23rem;
+}
+
+.projects-menu {
+  width: 81.1rem;
+  position: absolute;
+  background-color: var(--color-fushia);
+}
+
+#projects .projects-menu ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+}
+
+#projects .projects-menu a {
+  color: var(--color-white);
+  font-size: 2.3rem;
+  padding: 1rem 2rem;
+  font-weight: 600;
+}
+
+
+.projects-wrapper {
+  width: 81.25rem;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+.project-section-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.projects-container {
+  width: 23rem;
+  margin: 0 1rem 1rem;
+}
+
+#projects footer h2 {
+  color: var(--color-white);
+}
+
+
+/*************Case-Study-Styles*************/
+
+/*Base Styles*/
+.case-study-title p strong {
+  font-size: 1.8rem;
+}
+
+.case-study-summary {
+  background-color: var(--color-white);
+}
+
+.case-study-summary p {
+  text-align: left;
+  margin-top: 5%;
+}
+
+.case-study-summary img {
+  margin-top: 1%;
+}
 
 .projects-background {
   clear: left;
   background-color: var(--color-white);
   padding: 3rem;
   height:64rem;
-  border: var(--debuging-border);
 }
 
 .projects-background p {
@@ -379,28 +474,7 @@ li {
   letter-spacing: 3rem;
 }
 
-
-
-/*************projects-Case-Study*************/
-.case-study-title p strong {
-  font-size: 1.8rem;
-}
-
-.case-study-summary {
-  
-  background-color: var(--color-white);
-}
-
-.case-study-summary p {
-  text-align: left;
-  margin-top: 5%;
-}
-
-.case-study-summary img {
-  margin-top: 1%;
-}
-
-/*************projects-Single-Webpage-Design*************/
+/*************Case-Study-Single-Webpage-Design*************/
 #projects-single-webpage-design .dorothy-long {
  width: 24rem;
  padding-top: 2.3rem;
@@ -408,7 +482,7 @@ li {
  margin: 0 auto;
 }
 
-/*************projects-Responsive-Web-Design*************/
+/*************Case-Study-Responsive-Web-Design*************/
 #projects-responsive-web-design p {
   font-size: 1.3rem;
 }
@@ -429,7 +503,7 @@ li {
 }
 
 
-/*************projects-Product-Design*************/
+/*************Case-Study-Product-Design*************/
 #projects-product-design .projects-background {
   height: 84rem;
 }
@@ -512,11 +586,49 @@ nav ul li a {
   padding-bottom: 3rem;
 }
 
+/*******Projects Styles*******/
+#projects .main-projects-wrapper, .project-section-container, .projects-wrapper, .blank-div {
+  width: 56.25rem;
+}
 
-/*************Tablet-Main-projects-Page*************/
+.main-projects-wrapper {
+  margin-top: -.27rem;
+  padding: 0;
+}
+
+.projects-menu {
+  width: 56.21rem;
+  font-size: .3rem;
+}
+
+#projects .blank-div {
+  height: 53.1px;
+}
+
+.projects-container, #design img {
+  width: 25.7rem;
+}
+
+#projects h2 {
+  font-size: 2rem;
+}
+
+.projects-wrapper {
+  padding-left: .3rem;
+  padding-right: .3rem;
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+/*************Tablet-Case-Study-Styles*************/
 
 /*Base Styles*/
-
 .projects-background {
   height: 58rem;
   
@@ -526,7 +638,7 @@ nav ul li a {
   height: 14.7rem;
  }
 
-/*************Tablet-projects-Responsive-Web-Design*************/
+/*************Case-Study--Responsive-Web-Design*************/
 #projects-responsive-web-design .projects-background {
   height: 85rem;
 }
@@ -540,7 +652,7 @@ nav ul li a {
   width: 50rem;
 }
 
-/*************Tablet-projects-Product-Design*************/
+/*************Case-Study-Product-Design*************/
 #projects-product-design .projects-background {
   height: 76rem;
 }
@@ -681,10 +793,65 @@ nav ul li a {
   left: 1%;
 }*/
 
-/*************SmartPhone-Main-projects-Page*************/
+/*******Projects Styles*******/
+#projects .main-projects-wrapper, .project-section-container, .projects-wrapper, .blank-div  {
+  width: 24.99rem;
+}
+
+#projects nav ul, #projects footer {
+  width: 17.5rem;
+  text-align: left;
+}
+
+#projects .hero img {
+  display: none;
+}
+
+.projects-container, #design img {
+  width:15rem;
+}
+
+.projects-menu, .projects-menu ul {
+  
+  width: 17.5rem;
+  padding: .5rem 0;
+  margin: 0;
+}
+
+#projects .projects-menu a{
+  padding: 1rem 0;
+  font-size: 1rem;
+}
+
+#projects .blank-div {
+  height: 56px;
+}
+
+#projects h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+#projects h2 {
+  font-size: 1.26rem;
+  margin-bottom: 2rem;
+  width: 17.2rem;
+}
+
+#projects footer .phone-email {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#projects footer .phone-email .vertical-bar {
+  display: none;
+}
+
+
+
+/*************SmartPhone-Case-Study-Styles*************/
 
 /*Base Styles*/
-
 .projects-background {
   height: 111rem;
   clear: left;
@@ -709,12 +876,12 @@ nav ul li a {
   padding: 1rem 0 2rem;
 }
 
-/*************SmartPhone-projects-Single-Webpage-Design*************/
+/*************Case-Study-Single-Webpage-Design*************/
 #projects-single-webpage-design .projects-background {
   height: 105rem;
 }
 
-/*************SmartPhone-projects-Responsive-Web-Design*************/
+/*************Case-Study-Responsive-Web-Design*************/
 #projects-responsive-web-design .projects-background {
   height: 96rem;
 }
@@ -724,7 +891,7 @@ nav ul li a {
   padding: 0;
 }
 
-/*************SmartPhone-projects-Product-Design*************/
+/*************Case-Study-Product-Design*************/
 #projects-product-design .projects-background {
   height: 91rem;
 }
@@ -814,10 +981,9 @@ h2#about {
   left: 3%;
 }*
 
-/*************Mobile-Main-projects-Page and case-study *************/
+/*************Mobile-Case-Study-Styles*************/
 
 /*Base Styles*/
-
 .projects-background {
   height: 111rem;
  }
@@ -839,13 +1005,13 @@ h2#about {
  }
 
 
-/*************Mobile-projects-Product-Design*************/
+/*************Mobile-Case-Study-Product-Design*************/
 #projects-product-design .projects-background {
   height: 93rem;
   padding: .3rem;
 }
 
-/*Responsive-Mobile-First-Design*/
+/*************Case-Study-Responsive-Mobile-First-Design*************/
 #projects-responsive-web-design .projects-background {
   height: 116rem;
 }
