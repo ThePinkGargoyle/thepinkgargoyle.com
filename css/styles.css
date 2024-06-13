@@ -18,7 +18,8 @@
   --color-fushia: #ff0099;
   --color-white: #ffffff;
   --color-black: #000000;
-  --debuging-border: 1px solid yellowgreen;
+  --color-yellowgreen: #9acd32;
+  --debuging-border: 1px solid green;
 }
 
 /*a href attribute styles*/
@@ -27,7 +28,7 @@ a:link {
 }
 
 a:hover {
-  color: (--color-fushia);
+  color: var(--color-yellowgreen);
 }
 
 
@@ -798,13 +799,15 @@ nav ul li a {
   width: 24.99rem;
 }
 
+
+
 #projects nav ul, #projects footer {
   width: 17.5rem;
   text-align: left;
 }
 
-#projects .hero img {
-  display: none;
+#projects .hero-projects {
+  width: 17.5rem;
 }
 
 .projects-container, #design img {
