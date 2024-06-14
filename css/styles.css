@@ -290,10 +290,10 @@ li {
 }
 
 #copyright {
-  clear: left;
   background-color: var(--color-fushia);
   margin: 0;
   border: 1px solid var(--color-fushia);
+  height: 5rem;
 }
 
 #copyright a {
@@ -603,6 +603,10 @@ width: 23rem;
     padding-bottom: 3rem;
   }
 
+  #copyright {
+    height: 3rem;
+  }
+
   /*******Projects Styles*******/
   #projects .main-projects-wrapper, .project-section-container, .projects-wrapper, .blank-div {
     width: 56.25rem;
@@ -634,6 +638,10 @@ width: 23rem;
     padding-left: .3rem;
     padding-right: .3rem;
     margin: 0;
+  }
+
+  #projects #copyright {
+    height: 4rem;
   }
 
 
@@ -793,10 +801,8 @@ width: 23rem;
     margin-top: 0;
   }
 
-
-
   /*SmartPhone-Top-Up Button*/
-  /*#myBtn {
+  /*/#myBtn {
     
     left: 1%;
   }*/
@@ -822,7 +828,7 @@ width: 23rem;
   }
 
   #projects footer #copyright {
-    padding: 1.6rem 0;
+    height: 3.3rem;
   }
 
   /*******SmartPhone-Case-Study-Styles*******/
