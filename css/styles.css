@@ -10,1268 +10,1270 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-* {
-  box-sizing: border-box;
-}
-
-:root {
-  --color-fushia: #ff0099;
-  --color-white: #ffffff;
-  --color-black: #000000;
-  --color-yellowgreen: #9acd32;
-  --debuging-border: 6px solid var(--color-yellowgreen);
-}
-
-/*Start a href attribute styles and hover effect*/
-a:link { 
-  text-decoration: none;  
-}
-
-a:hover, #copyright a:hover, #projects .projects-menu a:hover, .dev-description h2:hover, .website-description h2:hover, #projects h3:hover {
-  color: var(--color-yellowgreen);
-}
-
-.skills-icon img:hover, .phone:hover, .email:hover, button:hover {
-  background-color: var(--color-yellowgreen);
-}
-
-.projects-container a:hover {
-  background-color: var(--color-yellowgreen);
-}
-
-.fa-linkedin:hover, .fa-github:hover, .fa-youtube:hover, .fa-instagram:hover, .fa-free-code-camp:hover {
-  color: var(--color-yellowgreen);
-}
-/*End a href attribute styles and hover effect*/
-/*
-
-html {
-  font-size: 16px;
-}*/
-
-body {
-  background-color: var(--color-black);
-  max-width: 1300px;
-  margin: 0 auto;
-  border: solid 1px var(--color-fushia);
-  box-shadow: var(--color-fushia) 0px 5px 15px;
-}
-
-h1 {
-  font-family: 'Golden Ranger', script;
-  color: var(--color-white);
-  font-size: 3.5rem;
-  text-align: center;
-  width: 38rem;
-}
-
-h2 {
-  font-family: 'Nunito', sans-serif;
-  font-size: 2rem;
-  font-weight: 700;
-}
-
-p {
-  font-family: 'Nunito', sans-serif;
-  font-size: 1.3rem;
-  font-weight: 700;
-}
-
-img {
-  max-width: 100%;
-}
-
-/*Scrollbar styling*/
-  ::-webkit-scrollbar {
-    display: none;
-}
-
-/* GRID */
-
-.full-width {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.half-width {
-  width: 50%;
-  float: left;
-}
-
-.third-width {
-  width: 32.8%;
-  text-align: center;
-  float: left;
-}
-
-.two-thirds-width {
-  width: 67.2%;
-  float: left;
-}
-
-.wrapper {
-  width: fit-content;
-}
-
-/*Header*/
-
-nav {
-  position: absolute;
-  top: 1.3rem;
-  font-family: 'Nunito', sans-serif;
-}
-
-nav ul li {
-  display: inline;
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-nav ul li a {
-  color: var(--color-white);
-  font-size: 1.3rem;
-  font-weight: 600;
-}
-
-li {
-  font-family: 'Nunito', sans-serif;
-  font-size: 1rem;
-}
-
-.dev-description {
-  border: 1px solid var(--color-black);
-  line-height: 1.5rem;
-  padding-left: 6rem;
-  color: var(--color-white);
-}
-
-.dev-description h2 {
-  margin-bottom: 4rem;
-  padding-top: 4rem;
-  color: var(--color-white);
-}
-
-.dev-description, .dev-icon  {
-  height: 38rem;
-}
-
-.dev-icon {
-  padding-top: 13rem;
-}
-
-.dev-description, .dev-icon, .website-description, .website-icon {
-  background-color: var(--color-black);
-} 
-
-.website-description {
-  height: 16rem;
-  color: var(--color-white);
-  line-height: 1.5rem;
-  padding-left: 6rem; 
-}
-
-
-.website-description h2{
-  color: var(--color-white);
-  padding-top: 4rem;
-  margin-bottom: 4rem;
-}
-
-
-.website-description p {
-  color: var(--color-white);
-}
-
-.website-description, .website-icon {
-  height: 36rem;
-}
-
-.website-icon {
-  padding-top: 11rem;
-}
-
-
-/*About Me*/
-
-#about {
-  clear: left;
-  color: var(--color-black);
-  background-color: var(--color-white);
-  text-align: center;
-  padding-top: 4rem;  
-  padding-bottom: 1rem;
-  margin-bottom: 0;
+  * {
+    box-sizing: border-box;
+  }
   
-}
-
-.headshot {
-  max-width: 40.55rem;
-  display: flex;
-  align-items: center;
-  justify-content:center
-} 
-
-.headshot img {
-  max-width: 26rem;
-  height: auto;
-  border-radius: 3rem;
-}
+  :root {
+    --color-fushia: #ff0099;
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-yellowgreen: #9acd32;
+    --debuging-border: 6px solid var(--color-yellowgreen);
+  }
   
-.headshot, .about-summary {
-  background-color: var(--color-white);
-  height: 42rem;
-  margin-top: 0;
-}
-
-.about-summary {
-  clear: left;
-  text-align: left;
-  font-weight: 700;
-  line-height: 1.5rem;
-  color: var(--color-black);
-  padding: 4rem 3rem 4rem 6rem;
-}
-
-/*Footer*/
-
-.footer-background {
-  clear: left;
-  min-height: 18rem;
-  background-color: var(--color-fushia);
-}
-
-#contact {
-  color: var(--color-white);
-  text-align: center;
-  padding-top: 4rem;
-  padding-bottom: 3rem;
-  margin-top: 0;
-  clear: left;
-}
-
-.contact-info {
-  align-items: center;
-}
-
-.contact-info p {
-  width: 3%;
-  text-align: center;
-  color: var(--color-white);
-  float: left;
-}
-
-.phone p {
-  width: 100%;
-}
-
-.email p{
-  width: 100%;
-}
-
-.phone-email {
-  display: flex;
-  justify-content: center;
-}
-
-.social-media {
-  clear: left;
-  width: 100%;
-  text-align: center;
-  color: var(--color-white);
-  padding-top: 4rem;
-}
-
-.social-media-icon i {
-  font-size: 5rem;
-  letter-spacing: 3rem;
-  color: var(--color-white);
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
-#copyright {
-  background-color: var(--color-fushia);
-  margin: 0;
-  border: 1px solid var(--color-fushia);
-  height: 5rem;
-}
-
-#copyright a {
-  color: var(--color-white);
-  text-align: center;
-}
-
-/*Top-Up Button*/
-#myBtn {
-  display: none;
-  position:fixed;
-  bottom: .5rem;
-  z-index: 99;
-  border: .063rem solid var(--color-black);
-  outline: none;
-  cursor: pointer;
-  padding: 0rem;
-  border-radius: .5rem;
-}
-
-
-/*******Projects Styles*******/
-
-/*Base Styles*/
-.header-projects {
-  position: relative;
-}
-
-.main-projects-wrapper {
-  height: 100vh;
-  overflow: scroll;
-  margin-top: -.24rem;
-}
-
-#projects h2 {
-  color:var(--color-fushia);
-  font-size: 2.8rem;
-  margin-bottom: 3rem;
-}
-
-#projects .blank-div {
-  height:68px;
-}
-
-.projects-container h3 {
-  color: var(--color-white);
-  font-family: 'Nunito', sans-serif;
-  font-size: 1.8rem;
-  text-align: center;
-  margin-top: 0;
-  border: 3px solid var(--color-fushia);
-}
-
-#design img {
-width: 23rem;
-}
-
-.projects-menu {
-  width: 81.1rem;
-  position: absolute;
-  background-color: var(--color-fushia);
-}
-
-#projects .projects-menu ul {
-  list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content:space-around;
-}
-
-#projects .projects-menu a {
-  color: var(--color-white);
-  font-size: 2.3rem;
-  padding: 1rem 2rem;
-  font-weight: 600;
-}
-
-
-.projects-wrapper {
-  width: 81.25rem;
-  margin: 0 auto;
-  padding: 0 3rem;
-}
-
-.project-section-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  margin: 0 auto;
-}
-
-.projects-container {
-  width: 23rem;
-  margin: 0 1rem 1rem;
-}
-
-#projects footer h2 {
-  color: var(--color-white);
-}
-
-
-/*******Case-Study-Styles*******/
-
-/*Base Styles*/
-.case-study-title p strong {
-  font-size: 1.8rem;
-}
-
-.case-study-summary {
-  background-color: var(--color-white);
-}
-
-.case-study-summary p {
-  text-align: left;
-  margin-top: 5%;
-}
-
-.case-study-summary img {
-  margin-top: 1%;
-}
-
-.projects-background {
-  clear: left;
-  background-color: var(--color-white);
-  padding: 3rem;
-  height:fit-content;
-}
-
-.projects-background p {
-  font-size: 1rem;
-}
-
-.projects-background p strong {
-  color: var(--color-fushia);
-  font-size: 1.5rem;
-  text-align: left;
-  padding-left: 1%;
-}
-
-.projects-background h2 {
-  color: var(--color-white);
-  text-align: center;
-  background-color: var(--color-black);
-}
-
-#hero-projects-case-study {
-  height: 21.2rem;
- }
-
-
-/*Grid*/
-.projects-background .half-width {
-  text-align: center;
-}
-
-/*case-study*/
-.design-projects {
-  margin-top: .03rem;
-}
-
-.development-projects {
-  margin-top: .33rem;
-  clear: left;
-}
-
-.projects-case-study #contact{
-  padding-top: 3rem;
-  padding-bottom: 2rem;
-}
-
-.projects-case-study .social-media {
- padding-top: 3rem;
-}
-
-.projects-case-study .social-media-icon {
-  padding: 3rem 0;
-  display: flex;
-  justify-content: center;
-}
-
-.projects-case-study .social-media-icon i {
-  padding-top: 0;
-  padding-bottom: 0;
-  letter-spacing: 3rem;
-}
-
-/*******Case-Study-Single-Webpage-Design*******/
-
-#projects-single-webpage-design .projects-background {
-  height: 61rem;
-  margin-top: 0;
-}
-
-#projects-single-webpage-design .dorothy-long {
- width: 24rem;
- padding-top: 2.3rem;
- padding-left: 1.3rem;
- margin: 0 auto;
-}
-
-/*******Case-Study-Responsive-Web-Design*******/
-#projects-responsive-web-design p {
-  font-size: 1.3rem;
-}
-
-#projects-responsive-web-design .projects-background {
-  height: 95rem;
-}
-
-#projects-responsive-web-design .yolanda-lopez {
-  margin-bottom: 2.4rem;
-  margin-top: 3rem;
-}
-
-#projects-responsive-web-design .mobile-first-design {
-  padding: 3rem;
-  width: 60rem;
-  margin: 0 auto;
-}
-
-
-/*******Case-Study-Product-Design*******/
-#projects-design .projects-background {
-  height: 86rem;
-  margin-top: 0;
-}
-
-
-
-
-
-/**********************Tablet View**********************/
-@media screen and (max-width:1281px) {
-
-  /*Tablet-Base Styles*/
-
+  /*Start a href attribute styles and hover effect*/
+  a:link { 
+    text-decoration: none;  
+  }
+  
+  a:hover, #copyright a:hover, #projects .projects-menu a:hover, .dev-description h2:hover, .website-description h2:hover, #projects h3:hover {
+    color: var(--color-yellowgreen);
+  }
+  
+  .skills-icon img:hover, .phone:hover, .email:hover, button:hover {
+    background-color: var(--color-yellowgreen);
+  }
+  
+  .projects-container a:hover {
+    background-color: var(--color-yellowgreen);
+  }
+  
+  .fa-linkedin:hover, .fa-github:hover, .fa-youtube:hover, .fa-instagram:hover, .fa-free-code-camp:hover {
+    color: var(--color-yellowgreen);
+  }
+  /*End a href attribute styles and hover effect*/
+    
+  html {
+    font-size: 16px;
+  }
+  
   body {
-    max-width: 899.99px;
-    margin: 0 auto;
-  }
-
-  h2 {
-    font-size: 1.8rem;
-    letter-spacing: .2rem;
-  }
-
-  p {
-    font-size: 1rem;
-  }
-
-  /*Tablet-Header*/
-  nav {
-    position: absolute;
-    top: .3rem;
-  }
-
-  nav ul li a {
-    font-size: 1.1rem;
-  }
-
-  /*Tablet-skills*/
-
-  .dev-icon, .dev-description, .website-icon, .website-description {
-    clear: left;
-  }
-
-  .dev-icon, .website-icon {
-    padding-left: 4rem;
-    width: 14rem;
-  }
-
-  .dev-description, .website-description {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  #about {
-    clear: left;
-    font-weight: 900;
-  } 
-
-  .headshot img{
-    max-width: 23rem;
-  }
-
-  .about-summary {
-    padding-left: 3rem;
-    padding-top: 3rem;
-  }
-
-  /*Tablet-Footer*/
-
-  #contact {
-    clear: left;
-    padding-bottom: 0;
-    margin-bottom: .7rem;
-  }
-
-  .social-media {
-    padding-top: 1rem;
-    padding-top: .7rem;
-  }
-
-  .social-media-icon i {
-    font-size: 3rem;
-    padding-top: 0;
-    padding-bottom: 3rem;
-  }
-
-  #copyright {
-    height: 3rem;
-  }
-
-  /*******Projects Styles*******/
-  #projects .main-projects-wrapper, .project-section-container, .projects-wrapper, .blank-div {
-    width: 56.25rem;
-  }
-
-  .main-projects-wrapper {
-    margin-top: -.27rem;
-    padding: 0;
-  }
-
-  .projects-menu {
-    width: 56.21rem;
-    font-size: .3rem;
-  }
-
-  #projects .blank-div {
-    height: 53.1px;
-  }
-
-  .projects-container, #design img {
-    width: 25.7rem;
-  }
-
-  #projects h2 {
-    font-size: 2rem;
-  }
-
-  .projects-wrapper {
-    padding-left: .3rem;
-    padding-right: .3rem;
-    margin: 0;
-  }
-
-  #projects #copyright {
-    height: 4rem;
-  }
-
-
-
-  /*******Tablet-Case-Study-Styles*******/
-
-  /*Base Styles*/
-  #hero-projects-case-study {
-    height: fit-content;
-  }
-  
-  /*******Case-Study--Responsive-Web-Design*******/
-  #projects-responsive-web-design .projects-background {
-    height: 85rem;
-  }
-
-  #projects-responsive-web-design .yolanda-lopez {
-    width: 50%;  
-    margin: 0 auto 3% auto;
-  }
-
-  #projects-responsive-web-design .mobile-first-design {
-    width: 50rem;
-  }
-
-  /*******Case-Study-Product-Design*******/
-  #projects-design .projects-background {
-    margin-top: -.3rem;
-    height: 73rem;
-  }
-}
-
-
-/**********************SmartPhone View**********************/
-@media (max-width:885px) {
-
-  /*Smartphone-Base Styles*/
-  body {
-    max-width: 399.99px;
-    margin: 0 auto;
-    box-shadow: none;  
-  }
-
-  main {
-    position: fixed;
-    overflow: scroll;
-    top: 52px;
-    padding-bottom: 52px;
-    width: 399.99px;
-    height: fit-content;
-    height: 100vh;
-  }
-
-  h2 {
-    font-size: 1rem;
-  }
-
-  p, li {
-    font-size: .8rem;
-  }
-
-  /*SmartPhone-Header*/
-  nav {
-    position: fixed;
-    top: 0rem;
-    width: 25rem;
     background-color: var(--color-black);
+    max-width: 1300px;
+    margin: 0 auto;
+    border: solid 1px var(--color-fushia);
+    box-shadow: var(--color-fushia) 0px 5px 15px;
   }
-
-  nav ul {
-    padding: 0;
+  
+  h1 {
+    font-family: 'Golden Ranger', script;
+    color: var(--color-white);
+    font-size: 3.5rem;
     text-align: center;
+    width: 38rem;
   }
-
-  nav ul li a {
-    font-size: 1rem;
-  }
-
-
-  /*SmartPhone-skills*/
-
-  #skills {
-    clear: left;
-    margin-top: 1.1rem;
-  }
-
-  .dev-icon {
-    display: none;
-  }
-
-  .website-icon {
-    display: none;
-  }
-
-  .dev-description, .website-description {
-    border: 1px solid var(--color-fushia);
-    width: 25rem;
-    height: fit-content;
-  }
-
-  .dev-description h2, .website-description h2 {
-    padding-top: 1rem;
-    margin-bottom: 1rem;
-  }
-
-  .dev-description ul, .website-description ul {
-    list-style-position: none;
-    padding-left: .9rem;
-    padding-right: .9 rem;
-  }
-
-  /*SmartPhone-About Me*/
-
-  #about {
-    margin: 0;
-    padding-top: 2rem;
-    padding-left: 1rem;
-    width: 25rem;
-    text-align: center;
-  }
-
-  .about-me-container {
-    display: flex;
-    flex-wrap: wrap-reverse;
-  }
-
-  .about-summary {
-    width: 25rem;
-    height: fit-content;
-    
-  }
-
-  .headshot {
-    padding-top: 3rem;
-    width: 25rem;
-    height: fit-content;
-  }
-
-  /*SmartPhone-Footer*/
-
-  #contact {
-    padding-top: 3rem;
-  }
-
-  .social-media h2{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-
-  .social-media-icon i {
+  
+  h2 {
+    font-family: 'Nunito', sans-serif;
     font-size: 2rem;
-    width: 3rem;
-    padding-bottom: 0;
-  }
-
-  #copyright {
-    margin-top: 0;
-  }
-
-  /*SmartPhone-Top-Up Button*/
-  /*/#myBtn {
-    
-    left: 1%;
-  }*/
-
-  /*******SmartPhone Projects Styles*******/
-
-  #projects .main-projects-wrapper, .project-section-container, .projects-wrapper, .blank-div, .projects-menu {
-    width: 24.99rem;
-  }
-
-  #projects .projects-menu ul {
-    padding: .5rem 0;
-  }
-
-  #projects .projects-menu a {
-    font-size: 1rem;
-    padding: 1rem 0;
-  }
-
-  #projects h2 {
-    font-size: 1.9rem;
     font-weight: 700;
   }
-
-  #projects footer #copyright {
-    height: 3.3rem;
+  
+  p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
   }
-
-  /*******SmartPhone-Case-Study-Styles*******/
-
-  /*Base Styles*/
-  .projects-background {
-    height: 111rem;
-    clear: left;
+  
+  img {
+    max-width: 100%;
   }
-
-  #hero-projects-case-study {
-    height: 6.5rem;
+  
+  /*Scrollbar styling*/
+    ::-webkit-scrollbar {
+      display: none;
   }
-
-  /*Grid*/
-  .projects-background .third-width {
+  
+  /* GRID */
+  
+  .full-width {
     width: 100%;
-  }
-
-  .projects-background .half-width {
-    width: 100%;
-  }
-
-
-
-  .projects-case-study .social-media-icon {
-    padding: 1rem 0 2rem;
-  }
-
-  /*******Case-Study-Single-Webpage-Design*******/
-  #projects-single-webpage-design .projects-background {
-    height: 102rem;
-  }
-
-  /*******Case-Study-Responsive-Web-Design*******/
-  #projects-responsive-web-design .projects-background {
-    height: 96rem;
-  }
-
-  #projects-responsive-web-design .mobile-first-design {
-    width: 20rem;
-    padding: 0;
-  }
-
-  /*******Case-Study-Product-Design*******/
-  #projects-design .projects-background {
-    margin-top: 0;
-    height: 92rem;
-  }
-
-}
-
-/**********************Mobile View**********************/
-@media (max-width:399px) {
-
-  /*Mobile-Base Styles*/
-  body {
-    max-width: 280px;
     margin: 0 auto;
-    box-shadow: none;
   }
-
-  /*Mobile-Header*/
-
-  main {
-    width: 17.5rem;
-    top: 26.5px;
-    padding-bottom: 26.5px;
+  
+  .half-width {
+    width: 50%;
+    float: left;
   }
-
-  nav, .dev-description, .website-description, #about, .headshot, .about-summary, #footer, #contact, .phone-email, #copyright {
-    width: 17.5rem;
-  }
-
-  nav ul {
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:justify;
-    line-height: 1.5rem;
-  }
-
-  nav ul li a {
-    font-size: .62rem;
-  }
-
-  /*Mobile-About Me*/
-
-  #about, .about-summary {
-    clear: left;
-    margin: 0;
-  }
-
-  h2#about {
-    clear: left;
+  
+  .third-width {
+    width: 32.8%;
     text-align: center;
-    padding: 3rem;
+    float: left;
   }
-
+  
+  .two-thirds-width {
+    width: 67.2%;
+    float: left;
+  }
+  
+  .wrapper {
+    width: fit-content;
+  }
+  
+  /*Header*/
+  
+  nav {
+    position: absolute;
+    top: 1.3rem;
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  
+  nav ul li a {
+    color: var(--color-white);
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  
+  li {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+  }
+  
+  .dev-description {
+    border: 1px solid var(--color-black);
+    line-height: 1.5rem;
+    padding-left: 6rem;
+    color: var(--color-white);
+  }
+  
+  .dev-description h2 {
+    margin-bottom: 4rem;
+    padding-top: 4rem;
+    color: var(--color-white);
+  }
+  
+  .dev-description, .dev-icon  {
+    height: 38rem;
+  }
+  
+  .dev-icon {
+    padding-top: 13rem;
+  }
+  
+  .dev-description, .dev-icon, .website-description, .website-icon {
+    background-color: var(--color-black);
+  } 
+  
+  .website-description {
+    height: 16rem;
+    color: var(--color-white);
+    line-height: 1.5rem;
+    padding-left: 6rem; 
+  }
+  
+  
+  .website-description h2{
+    color: var(--color-white);
+    padding-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  
+  
+  .website-description p {
+    color: var(--color-white);
+  }
+  
+  .website-description, .website-icon {
+    height: 36rem;
+  }
+  
+  .website-icon {
+    padding-top: 11rem;
+  }
+  
+  
+  /*About Me*/
+  
+  #about {
+    clear: left;
+    color: var(--color-black);
+    background-color: var(--color-white);
+    text-align: center;
+    padding-top: 4rem;  
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+    
+  }
+  
   .headshot {
-    padding: 0;
+    max-width: 40.55rem;
+    display: flex;
+    align-items: center;
+    justify-content:center
+  } 
+  
+  .headshot img {
+    max-width: 26rem;
+    height: auto;
+    border-radius: 3rem;
   }
-
-  /*Mobile-Footer*/
-
+    
+  .headshot, .about-summary {
+    background-color: var(--color-white);
+    height: 42rem;
+    margin-top: 0;
+  }
+  
+  .about-summary {
+    clear: left;
+    text-align: left;
+    font-weight: 700;
+    line-height: 1.5rem;
+    color: var(--color-black);
+    padding: 4rem 3rem 4rem 6rem;
+  }
+  
+  /*Footer*/
+  
+  .footer-background {
+    clear: left;
+    min-height: 18rem;
+    background-color: var(--color-fushia);
+  }
+  
   #contact {
-    padding: 3rem 0 1rem;
+    color: var(--color-white);
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    margin-top: 0;
+    clear: left;
   }
-
+  
+  .contact-info {
+    align-items: center;
+  }
+  
+  .contact-info p {
+    width: 3%;
+    text-align: center;
+    color: var(--color-white);
+    float: left;
+  }
+  
+  .phone p {
+    width: 100%;
+  }
+  
+  .email p{
+    width: 100%;
+  }
+  
   .phone-email {
     display: flex;
-    flex-wrap: wrap;
-    padding: 0;
+    justify-content: center;
   }
-
-  .vertical-bar {
-    display: none;
+  
+  .social-media {
+    clear: left;
+    width: 100%;
+    text-align: center;
+    color: var(--color-white);
+    padding-top: 4rem;
   }
-
-  .social-media h2 {
-    padding-bottom: 2rem;
-  }
-
-  .social-media-icon {
-    padding-bottom: 2rem;
-  }
-
+  
   .social-media-icon i {
-    width: 2.6rem;
+    font-size: 5rem;
+    letter-spacing: 3rem;
+    color: var(--color-white);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
-
+  
   #copyright {
-    padding-bottom: .1rem;
+    background-color: var(--color-fushia);
+    margin: 0;
+    border: 1px solid var(--color-fushia);
+    height: 5rem;
   }
-
-  /*Mobile-Top-Up Button*/
-  /*#myBtn {
-    width: 3rem;
-    left: 3%;
-  }*/
-
-
-  /*******Mobile Projects Styles*******/
-
-  #projects .main-projects-wrapper, .project-section-container, .projects-wrapper, .blank-div, .projects-menu {
-    width: 17.5rem;
+  
+  #copyright a {
+    color: var(--color-white);
+    text-align: center;
   }
-
-  #projects h2 {
-    font-size: 1.2rem;
+  
+  /*Top-Up Button*/
+  #myBtn {
+    display: none;
+    position:fixed;
+    bottom: .5rem;
+    z-index: 99;
+    border: .063rem solid var(--color-black);
+    outline: none;
+    cursor: pointer;
+    padding: 0rem;
+    border-radius: .5rem;
   }
-
-  #projects h3 {
-    font-size: 1.1rem;
-  }
-
-  /*******Mobile-Case-Study-Styles*******/
-
+  
+  
+  /*******Projects Styles*******/
+  
   /*Base Styles*/
-  .projects-background {
-    height: 111rem;
+  .header-projects {
+    position: relative;
   }
-
-  .projects-background .case-study-title strong {
+  
+  .main-projects-wrapper {
+    height: 100vh;
+    overflow: scroll;
+    margin-top: -.24rem;
+  }
+  
+  #projects h2 {
+    color:var(--color-fushia);
+    font-size: 2.8rem;
+    margin-bottom: 3rem;
+  }
+  
+  #projects .blank-div {
+    height:68px;
+  }
+  
+  .projects-container h3 {
+    color: var(--color-white);
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 0;
+    border: 3px solid var(--color-fushia);
+  }
+  
+  #design img {
+  width: 23rem;
+  }
+  
+  .projects-menu {
+    width: 81.1rem;
+    position: absolute;
+    background-color: var(--color-fushia);
+  }
+  
+  #projects .projects-menu ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+  }
+  
+  #projects .projects-menu a {
+    color: var(--color-white);
+    font-size: 2.3rem;
+    padding: 1rem 2rem;
+    font-weight: 600;
+  }
+  
+  
+  .projects-wrapper {
+    width: 81.25rem;
+    margin: 0 auto;
+    padding: 0 3rem;
+  }
+  
+  .project-section-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .projects-container {
+    width: 23rem;
+    margin: 0 1rem 1rem;
+  }
+  
+  #projects footer h2 {
+    color: var(--color-white);
+  }
+  
+  
+  /*******Case-Study-Styles*******/
+  
+  /*Base Styles*/
+  .case-study-title p strong {
+    font-size: 1.8rem;
+  }
+  
+  .case-study-summary {
+    background-color: var(--color-white);
+  }
+  
+  .case-study-summary p {
+    text-align: left;
+    margin-top: 5%;
+  }
+  
+  .case-study-summary img {
+    margin-top: 1%;
+  }
+  
+  .projects-background {
+    clear: left;
+    background-color: var(--color-white);
+    padding: 3rem;
+    height:fit-content;
+  }
+  
+  .projects-background p {
+    font-size: 1rem;
+  }
+  
+  .projects-background p strong {
+    color: var(--color-fushia);
+    font-size: 1.5rem;
+    text-align: left;
+    padding-left: 1%;
+  }
+  
+  .projects-background h2 {
+    color: var(--color-white);
+    text-align: center;
+    background-color: var(--color-black);
+  }
+  
+  #hero-projects-case-study {
+    height: 21.2rem;
+   }
+  
+  
+  /*Grid*/
+  .projects-background .half-width {
+    text-align: center;
+  }
+  
+  /*case-study*/
+  .design-projects {
+    margin-top: .03rem;
+  }
+  
+  .development-projects {
+    margin-top: .33rem;
+    clear: left;
+  }
+  
+  .projects-case-study #contact{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+  
+  .projects-case-study .social-media {
+   padding-top: 3rem;
+  }
+  
+  .projects-case-study .social-media-icon {
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .projects-case-study .social-media-icon i {
+    padding-top: 0;
+    padding-bottom: 0;
+    letter-spacing: 3rem;
+  }
+  
+  /*******Case-Study-Single-Webpage-Design*******/
+  
+  #projects-single-webpage-design .projects-background {
+    height: 61rem;
+    margin-top: 0;
+  }
+  
+  #projects-single-webpage-design .dorothy-long {
+   width: 24rem;
+   padding-top: 2.3rem;
+   padding-left: 1.3rem;
+   margin: 0 auto;
+  }
+  
+  /*******Case-Study-Responsive-Web-Design*******/
+  #projects-responsive-web-design p {
     font-size: 1.3rem;
   }
-
-  .projects-case-study .social-media {
-    padding-top: 1rem;
-  }
-
-  .projects-case-study .social-media-icon {
-    padding: 0 0 2rem;
-  }
-
-  #hero-projects-case-study {
-    height: 4.6rem;
-  }
-
-  /*******Case-Study-Single-Webpage-Design*******/
-  #projects-single-webpage-design .projects-background {
-    height: 105rem;
-  }
-
-
-  /*******Mobile-Case-Study-Product-Design*******/
-  #projects-design .projects-background {
+  
+  #projects-responsive-web-design .projects-background {
     height: 95rem;
   }
-
-  /*******Case-Study-Responsive-Mobile-First-Design*******/
-  #projects-responsive-web-design .projects-background {
-    height: 116rem;
+  
+  #projects-responsive-web-design .yolanda-lopez {
+    margin-bottom: 2.4rem;
+    margin-top: 3rem;
   }
-
+  
   #projects-responsive-web-design .mobile-first-design {
+    padding: 3rem;
+    width: 60rem;
+    margin: 0 auto;
+  }
+  
+  
+  /*******Case-Study-Product-Design*******/
+  #projects-design .projects-background {
+    height: 86rem;
+    margin-top: 0;
+  }
+  
+  
+  
+  
+  
+  /**********************Tablet View**********************/
+  @media screen and (max-width:1281px) {
+  
+    /*Tablet-Base Styles*/
+  
+    body {
+      max-width: 899.99px;
+      margin: 0 auto;
+    }
+  
+    h2 {
+      font-size: 1.8rem;
+      letter-spacing: .2rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  
+    /*Tablet-Header*/
+    nav {
+      position: absolute;
+      top: .3rem;
+    }
+  
+    nav ul li a {
+      font-size: 1.1rem;
+    }
+  
+    /*Tablet-skills*/
+  
+    .dev-icon, .dev-description, .website-icon, .website-description {
+      clear: left;
+    }
+  
+    .dev-icon, .website-icon {
+      padding-left: 4rem;
+      width: 14rem;
+    }
+  
+    .dev-description, .website-description {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  
+    #about {
+      clear: left;
+      font-weight: 900;
+    } 
+  
+    .headshot img{
+      max-width: 23rem;
+    }
+  
+    .about-summary {
+      padding-left: 3rem;
+      padding-top: 3rem;
+    }
+  
+    /*Tablet-Footer*/
+  
+    #contact {
+      clear: left;
+      padding-bottom: 0;
+      margin-bottom: .7rem;
+    }
+  
+    .social-media {
+      padding-top: 1rem;
+      padding-top: .7rem;
+    }
+  
+    .social-media-icon i {
+      font-size: 3rem;
+      padding-top: 0;
+      padding-bottom: 3rem;
+    }
+  
+    #copyright {
+      height: 3rem;
+    }
+  
+    /*******Projects Styles*******/
+    #projects .main-projects-wrapper, .project-section-container, .projects-wrapper, .blank-div {
+      width: 56.25rem;
+    }
+  
+    .main-projects-wrapper {
+      margin-top: -.27rem;
+      padding: 0;
+    }
+  
+    .projects-menu {
+      width: 56.21rem;
+      font-size: .3rem;
+    }
+  
+    #projects .blank-div {
+      height: 53.1px;
+    }
+  
+    .projects-container, #design img {
+      width: 25.7rem;
+    }
+  
+    #projects h2 {
+      font-size: 2rem;
+    }
+  
+    .projects-wrapper {
+      padding-left: .3rem;
+      padding-right: .3rem;
+      margin: 0;
+    }
+  
+    #projects #copyright {
+      height: 4rem;
+    }
+  
+  
+  
+    /*******Tablet-Case-Study-Styles*******/
+  
+    /*Base Styles*/
+    #hero-projects-case-study {
+      height: fit-content;
+    }
+    
+    /*******Case-Study--Responsive-Web-Design*******/
+    #projects-responsive-web-design .projects-background {
+      height: 85rem;
+    }
+  
+    #projects-responsive-web-design .yolanda-lopez {
+      width: 50%;  
+      margin: 0 auto 3% auto;
+    }
+  
+    #projects-responsive-web-design .mobile-first-design {
+      width: 50rem;
+    }
+  
+    /*******Case-Study-Product-Design*******/
+    #projects-design .projects-background {
+      margin-top: -.3rem;
+      height: 73rem;
+    }
+  }
+  
+  
+  /**********************SmartPhone View**********************/
+  @media (max-width:885px) {
+  
+    /*Smartphone-Base Styles*/
+    body {
+      max-width: 399.99px;
+      margin: 0 auto;
+      box-shadow: none;  
+    }
+  
+    main {
+      position: fixed;
+      overflow: scroll;
+      top: 52px;
+      padding-bottom: 52px;
+      width: 399.99px;
+      height: 100vh;
+    }
+  
+    h2 {
+      font-size: 1rem;
+    }
+  
+    p, li {
+      font-size: .8rem;
+    }
+  
+    /*SmartPhone-Header*/
+    nav {
+      position: fixed;
+      top: 0rem;
+      width: 25rem;
+      background-color: var(--color-black);
+    }
+  
+    nav ul {
+      padding: 0;
+      text-align: center;
+    }
+  
+    nav ul li a {
+      font-size: 1rem;
+    }
+  
+  
+    /*SmartPhone-skills*/
+  
+    #skills {
+      clear: left;
+      margin-top: 1.1rem;
+    }
+  
+    .dev-icon {
+      display: none;
+    }
+  
+    .website-icon {
+      display: none;
+    }
+  
+    .dev-description, .website-description {
+      border: 1px solid var(--color-fushia);
+      width: 25rem;
+      height: fit-content;
+    }
+  
+    .dev-description h2, .website-description h2 {
+      padding-top: 1rem;
+      margin-bottom: 1rem;
+    }
+  
+    .dev-description ul, .website-description ul {
+      list-style-position: none;
+      padding-left: .9rem;
+      padding-right: .9 rem;
+    }
+  
+    /*SmartPhone-About Me*/
+  
+    #about {
+      margin: 0;
+      padding-top: 2rem;
+      padding-left: 1rem;
+      width: 25rem;
+      text-align: center;
+    }
+  
+    .about-me-container {
+      display: flex;
+      flex-wrap: wrap-reverse;
+    }
+  
+    .about-summary {
+      width: 25rem;
+      height: fit-content;
+      
+    }
+  
+    .headshot {
+      padding-top: 3rem;
+      width: 25rem;
+      height: fit-content;
+    }
+  
+    /*SmartPhone-Footer*/
+  
+    #contact {
+      padding-top: 3rem;
+    }
+  
+    .social-media h2{
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+  
+    .social-media-icon i {
+      font-size: 2rem;
+      width: 3rem;
+      padding-bottom: 0;
+    }
+  
+    #copyright {
+      padding-top: 1rem;
+      padding-bottom: 3rem;
+    }
+  
+    /*SmartPhone-Top-Up Button*/
+    /*/#myBtn {
+      
+      left: 1%;
+    }*/
+  
+    /*******SmartPhone Projects Styles*******/
+  
+    #projects .main-projects-wrapper, .project-section-container, .projects-wrapper, .blank-div, .projects-menu {
+      width: 24.99rem;
+    }
+  
+    #projects .projects-menu ul {
+      padding: .5rem 0;
+    }
+  
+    #projects .projects-menu a {
+      font-size: 1rem;
+      padding: 1rem 0;
+    }
+  
+    #projects h2 {
+      font-size: 1.9rem;
+      font-weight: 700;
+    }
+  
+    #projects footer #copyright {
+      height: 3.3rem;
+      padding-bottom: 3rem;
+    }
+  
+    /*******SmartPhone-Case-Study-Styles*******/
+  
+    /*Base Styles*/
+    .projects-background {
+      height: 111rem;
+      clear: left;
+    }
+  
+    #hero-projects-case-study {
+      height: 6.5rem;
+    }
+  
+    /*Grid*/
+    .projects-background .third-width {
+      width: 100%;
+    }
+  
+    .projects-background .half-width {
+      width: 100%;
+    }
+  
+  
+  
+    .projects-case-study .social-media-icon {
+      padding: 1rem 0 2rem;
+    }
+
+      
+    /*******Case-Study-Single-Webpage-Design*******/
+    #projects-single-webpage-design .projects-background {
+      height: 102rem;
+    }
+  
+    /*******Case-Study-Responsive-Web-Design*******/
+    #projects-responsive-web-design .projects-background {
+      height: 96rem;
+    }
+  
+    #projects-responsive-web-design .mobile-first-design {
+      width: 20rem;
+      padding: 0;
+    }
+
+    
+    /*******Case-Study-Product-Design*******/
+    #projects-design .projects-background {
+      margin-top: 0;
+      height: 92rem;
+    }
+  
+  }
+  
+  /**********************Mobile View**********************/
+  @media (max-width:399px) {
+  
+    /*Mobile-Base Styles*/
+    body {
+      max-width: 280px;
+      margin: 0 auto;
+      box-shadow: none;
+    }
+  
+    /*Mobile-Header*/
+  
+    main {
+      width: 17.5rem;
+      top: 26.5px;
+      padding-bottom: 26.5px;
+    }
+  
+    nav, .dev-description, .website-description, #about, .headshot, .about-summary, #footer, #contact, .phone-email, #copyright {
+      width: 17.5rem;
+    }
+  
+    nav ul {
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content:justify;
+      line-height: 1.5rem;
+    }
+  
+    nav ul li a {
+      font-size: .62rem;
+    }
+  
+    /*Mobile-About Me*/
+  
+    #about, .about-summary {
+      clear: left;
+      margin: 0;
+    }
+  
+    h2#about {
+      clear: left;
+      text-align: center;
+      padding: 3rem;
+    }
+  
+    .headshot {
+      padding: 0;
+    }
+  
+    /*Mobile-Footer*/
+  
+    #contact {
+      padding: 3rem 0 1rem;
+    }
+  
+    .phone-email {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0;
+    }
+  
+    .vertical-bar {
+      display: none;
+    }
+  
+    .social-media h2 {
+      padding-bottom: 2rem;
+    }
+  
+    .social-media-icon {
+      padding-bottom: 2rem;
+    }
+  
+    .social-media-icon i {
+      width: 2.6rem;
+    }
+  
+    #copyright {
+      padding-top: 0;
+      padding-bottom: 3rem;
+    }
+  
+    /*Mobile-Top-Up Button*/
+    /*#myBtn {
+      width: 3rem;
+      left: 3%;
+    }*/
+  
+  
+    /*******Mobile Projects Styles*******/
+  
+    #projects .main-projects-wrapper, .project-section-container, .projects-wrapper, .blank-div, .projects-menu {
+      width: 17.5rem;
+    }
+  
+    #projects h2 {
+      font-size: 1.2rem;
+    }
+  
+    #projects h3 {
+      font-size: 1.1rem;
+    }
+  
+    /*******Mobile-Case-Study-Styles*******/
+  
+    /*Base Styles*/
+    .projects-background {
+      height: 111rem;
+    }
+  
+    .projects-background .case-study-title strong {
+      font-size: 1.3rem;
+    }
+  
+    .projects-case-study .social-media {
+      padding-top: 1rem;
+    }
+  
+    .projects-case-study .social-media-icon {
+      padding: 0 0 2rem;
+    }
+  
+    #hero-projects-case-study {
+      height: 4.6rem;
+    }
+  
+    /*******Case-Study-Single-Webpage-Design*******/
+    #projects-single-webpage-design .projects-background {
+      height: 105rem;
+    }
+  
+  
+    /*******Mobile-Case-Study-Product-Design*******/
+    #projects-design .projects-background {
+      height: 95rem;
+    }
+  
+    /*******Case-Study-Responsive-Mobile-First-Design*******/
+    #projects-responsive-web-design .projects-background {
+      height: 116rem;
+    }
+  
+    #projects-responsive-web-design .mobile-first-design {
+      padding: 0;
+      width: 11rem;
+    }
+  }
+  
+  
+  /*
+   * Remove text-shadow in selection highlight:
+   * https://twitter.com/miketaylr/status/12228805301
+   *
+   * Vendor-prefixed and regular ::selection selectors cannot be combined:
+   * https://stackoverflow.com/a/16982510/7133471
+   *
+   * Customize the background color to match your design.
+   */
+  
+  ::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+  
+  ::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+  
+  /*
+   * A better looking default horizontal rule
+   */
+  
+  hr {
+    display: block;
+    height: 0.063rem;
+    border: 0;
+    border-top: 0.063rem solid #ccc;
+    margin: 1em 0;
     padding: 0;
-    width: 11rem;
   }
-}
-
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-  display: block;
-  height: 0.063rem;
-  border: 0;
-  border-top: 0.063rem solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-  resize: vertical;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden,
-[hidden] {
-  display: none !important;
-}
-
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
-
-.sr-only {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 0.063rem;
-  margin: -0.063rem;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 0.063rem;
-  /* 1 */
-}
-
-/*
- * Extends the .sr-only class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.sr-only.focusable:active,
-.sr-only.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
-}
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-  visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix::before,
-.clearfix::after {
-  content: " ";
-  display: table;
-}
-
-.clearfix::after {
-  clear: both;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
-
-  abbr[title]::after {
-    content: " (" attr(title) ")";
-  }
-
+  
   /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
+   * Remove the gap between audio, canvas, iframes,
+   * images, videos and the bottom of their containers:
+   * https://github.com/h5bp/html5-boilerplate/issues/440
    */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
+  
+  audio,
+  canvas,
+  iframe,
+  img,
+  svg,
+  video {
+    vertical-align: middle;
   }
-
-  pre {
-    white-space: pre-wrap !important;
-  }
-
-  pre,
-  blockquote {
-    border: 0.063rem solid #999;
-    page-break-inside: avoid;
-  }
-
+  
   /*
-   * Printing Tables:
-   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   * Remove default fieldset styles.
    */
-  thead {
-    display: table-header-group;
+  
+  fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
   }
-
-  tr,
-  img {
-    page-break-inside: avoid;
+  
+  /*
+   * Allow only vertical resizing of textareas.
+   */
+  
+  textarea {
+    resize: vertical;
   }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
+  
+  /* ==========================================================================
+     Author's custom styles
+     ========================================================================== */
+  
+  /* ==========================================================================
+     Helper classes
+     ========================================================================== */
+  
+  /*
+   * Hide visually and from screen readers
+   */
+  
+  .hidden,
+  [hidden] {
+    display: none !important;
   }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
+  
+  /*
+   * Hide only visually, but have it available for screen readers:
+   * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+   *
+   * 1. For long content, line feeds are not interpreted as spaces and small width
+   *    causes content to wrap 1 word per line:
+   *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+   */
+  
+  .sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 0.063rem;
+    margin: -0.063rem;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 0.063rem;
+    /* 1 */
   }
-}
-
+  
+  /*
+   * Extends the .sr-only class to allow the element
+   * to be focusable when navigated to via the keyboard:
+   * https://www.drupal.org/node/897638
+   */
+  
+  .sr-only.focusable:active,
+  .sr-only.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
+  }
+  
+  /*
+   * Hide visually and from screen readers, but maintain layout
+   */
+  
+  .invisible {
+    visibility: hidden;
+  }
+  
+  /*
+   * Clearfix: contain floats
+   *
+   * For modern browsers
+   * 1. The space content is one way to avoid an Opera bug when the
+   *    `contenteditable` attribute is included anywhere else in the document.
+   *    Otherwise it causes space to appear at the top and bottom of elements
+   *    that receive the `clearfix` class.
+   * 2. The use of `table` rather than `block` is only necessary if using
+   *    `:before` to contain the top-margins of child elements.
+   */
+  
+  .clearfix::before,
+  .clearfix::after {
+    content: " ";
+    display: table;
+  }
+  
+  .clearfix::after {
+    clear: both;
+  }
+  
+  /* ==========================================================================
+     EXAMPLE Media Queries for Responsive Design.
+     These examples override the primary ('mobile first') styles.
+     Modify as content requires.
+     ========================================================================== */
+  
+  @media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+  }
+  
+  @media print,
+    (-webkit-min-device-pixel-ratio: 1.25),
+    (min-resolution: 1.25dppx),
+    (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+  }
+  
+  /* ==========================================================================
+     Print styles.
+     Inlined to avoid the additional HTTP request:
+     https://www.phpied.com/delay-loading-your-print-css/
+     ========================================================================== */
+  
+  @media print {
+    *,
+    *::before,
+    *::after {
+      background: #fff !important;
+      color: #000 !important;
+      /* Black prints faster */
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
+  
+    a,
+    a:visited {
+      text-decoration: underline;
+    }
+  
+    a[href]::after {
+      content: " (" attr(href) ")";
+    }
+  
+    abbr[title]::after {
+      content: " (" attr(title) ")";
+    }
+  
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+    a[href^="#"]::after,
+    a[href^="javascript:"]::after {
+      content: "";
+    }
+  
+    pre {
+      white-space: pre-wrap !important;
+    }
+  
+    pre,
+    blockquote {
+      border: 0.063rem solid #999;
+      page-break-inside: avoid;
+    }
+  
+    /*
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+    thead {
+      display: table-header-group;
+    }
+  
+    tr,
+    img {
+      page-break-inside: avoid;
+    }
+  
+    p,
+    h2,
+    h3 {
+      orphans: 3;
+      widows: 3;
+    }
+  
+    h2,
+    h3 {
+      page-break-after: avoid;
+    }
+  }
