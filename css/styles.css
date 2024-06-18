@@ -685,12 +685,12 @@
     }
   
     main {
+      height: 100vh;
       position: fixed;
       overflow: scroll;
       top: 52px;
-      padding-bottom: 52px;
+      padding-bottom: 7rem;
       width: 399.99px;
-      height: 100vh;
     }
   
     h2 {
@@ -808,6 +808,10 @@
   
     /*******SmartPhone Projects Styles*******/
   
+    #projects main {
+      padding-bottom: 7rem;
+    }
+
     #projects .main-projects-wrapper, .project-section-container, .projects-wrapper, .blank-div, .projects-menu {
       width: 24.99rem;
     }
@@ -826,12 +830,7 @@
       font-weight: 700;
     }
   
-    #projects footer #copyright {
-      height: 3.3rem;
-      padding-bottom: 3rem;
-    }
-  
-    /*******SmartPhone-Case-Study-Styles*******/
+   /*******SmartPhone-Case-Study-Styles*******/
   
     /*Base Styles*/
     .projects-background {
@@ -898,7 +897,7 @@
     main {
       width: 17.5rem;
       top: 26.5px;
-      padding-bottom: 26.5px;
+      padding-bottom: 3rem;
     }
   
     nav, .dev-description, .website-description, #about, .headshot, .about-summary, #footer, #contact, .phone-email, #copyright {
@@ -975,6 +974,10 @@
   
   
     /*******Mobile Projects Styles*******/
+
+    #projects main {
+      padding-bottom: 3rem;
+    }
   
     #projects .main-projects-wrapper, .project-section-container, .projects-wrapper, .blank-div, .projects-menu {
       width: 17.5rem;
