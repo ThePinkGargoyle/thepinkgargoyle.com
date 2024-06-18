@@ -18,8 +18,8 @@
     --color-fushia: #ff0099;
     --color-white: #ffffff;
     --color-black: #000000;
-    --color-neongreen: #39ff14;
-    --debuging-border: 6px solid var(--color-yellowgreen);
+    --color-neon-green: #39ff14;
+    --debuging-border: 6px solid var(--color-neon-green);
   }
   
   /*Start a href attribute styles and hover effect*/
@@ -28,19 +28,19 @@
   }
   
   a:hover, #copyright a:hover, #projects .projects-menu a:hover, .dev-description h2:hover, .website-description h2:hover, #projects h3:hover {
-    color: var(--color-yellowgreen);
+    color: var(--color-neon-green);
   }
   
   .skills-icon img:hover, .phone:hover, .email:hover, button:hover {
-    background-color: var(--color-yellowgreen);
+    background-color: var(--color-neon-green);
   }
   
   .projects-container a:hover {
-    background-color: var(--color-yellowgreen);
+    background-color: var(--color-neon-green);
   }
   
   .fa-linkedin:hover, .fa-github:hover, .fa-youtube:hover, .fa-instagram:hover, .fa-free-code-camp:hover {
-    color: var(--color-yellowgreen);
+    color: var(--color-neon-green);
   }
   /*End a href attribute styles and hover effect*/
     
