@@ -769,13 +769,13 @@
     .about-summary {
       width: 25rem;
       height: fit-content;
-      
     }
   
     .headshot {
       padding-top: 3rem;
       width: 25rem;
       height: fit-content;
+      border-color: var(--color-fushia);
     }
   
     /*SmartPhone-Footer*/
